@@ -1,0 +1,78 @@
+@import "src/theme/_variables.scss";
+
+.stories {
+  background-color: $grey-light;
+  border-bottom: 1px solid $grey;
+  &__header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 1rem 0;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+
+// Story
+.story {
+  &__container {
+    margin: 0 0.7rem;
+    position: relative;
+  }
+  &--border &__container {
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    // background: linear-gradient(45deg, #bd3381, #ee583f);
+    background: linear-gradient(to right, #bd3381, #ee583f);
+    // background-color: #bd3381;
+  }
+
+  &__image {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  &--border &__image {
+    border: 2px solid white;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+    box-sizing: border-box;
+  }
+
+  &__add {
+    position: absolute;
+    right: -0.2rem;
+    bottom: -0.2rem;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    color: $blue;
+    background-color: white;
+  }
+
+  &__add-icon {
+    font-size: 22px;
+  }
+
+  &__username {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}

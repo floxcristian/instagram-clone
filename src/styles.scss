@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./theme/_reset.scss";
+@import "./theme/_variables.scss";
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
